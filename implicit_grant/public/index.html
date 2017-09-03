@@ -113,7 +113,7 @@
           localStorage.removeItem(stateKey);
           if (access_token) {
             $.ajax({
-                url: 'https://api.spotify.com/v1/me',
+                url: 'https://api.spotify.com/v1/majickdave',
                 headers: {
                   'Authorization': 'Bearer ' + access_token
                 },
@@ -131,8 +131,8 @@
 
           document.getElementById('login-button').addEventListener('click', function() {
 
-            var client_id = 'CLIENT_ID'; // Your client id
-            var redirect_uri = 'REDIRECT_URI'; // Your redirect uri
+            var client_id = 'c2616f8f3955440580840d5db8e3d06d'; // Your client id
+            var redirect_uri = 'http://localhost:8888/'; // Your redirect uri
 
             var state = generateRandomString(16);
 
